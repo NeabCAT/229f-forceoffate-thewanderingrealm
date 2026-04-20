@@ -554,7 +554,6 @@ GameObject:
   m_Component:
   - component: {fileID: 919112350}
   - component: {fileID: 919112349}
-  - component: {fileID: 919112348}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -562,18 +561,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &919112348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919112347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7325605cae90d9b4aaf8693db24908b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player
 --- !u!212 &919112349
 SpriteRenderer:
   serializedVersion: 2

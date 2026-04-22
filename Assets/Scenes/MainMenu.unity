@@ -3279,13 +3279,57 @@ PrefabInstance:
       propertyPath: Music_Vol
       value: 
       objectReference: {fileID: 1554798502}
+    - target: {fileID: 1041913255088841520, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041913255088841520, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1859779123753392078, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 536252116}
+    - target: {fileID: 4187996732406269065, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187996732406269065, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5639297428653505539, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5639297428653505539, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5639297428653505539, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5988445819210444843, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_Name
       value: ESC_UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 5988445819210444843, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202951040096197091, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202951040096197091, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202951040096197091, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6343515673843410224, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_Pivot.x

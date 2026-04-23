@@ -119,6 +119,60 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &208940033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 208940034}
+  - component: {fileID: 208940035}
+  m_Layer: 5
+  m_Name: Esc
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &208940034
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208940033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2143564827}
+  m_Father: {fileID: 772670635}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 15, y: -3}
+  m_SizeDelta: {x: -28852.307, y: -8243.927}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &208940035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208940033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e8caaf5aaf93434c920524819c89e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Option_ESC
+  uiOption: {fileID: 0}
+  uiESC: {fileID: 360435091}
+  Music_Vol: {fileID: 2143564829}
+  SFX_Vol: {fileID: 2143564828}
+  mainAuio: {fileID: 24100000, guid: 140c79862db53964e9c014b2e67f0d4b, type: 2}
 --- !u!1 &360435091 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5988445819210444843, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
@@ -436,7 +490,6 @@ GameObject:
   - component: {fileID: 772670634}
   - component: {fileID: 772670633}
   - component: {fileID: 772670632}
-  - component: {fileID: 772670636}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -519,7 +572,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2143564827}
+  - {fileID: 208940034}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -527,23 +580,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &772670636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772670631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e8caaf5aaf93434c920524819c89e29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Option_ESC
-  uiOption: {fileID: 0}
-  uiESC: {fileID: 360435091}
-  Music_Vol: {fileID: 2143564829}
-  SFX_Vol: {fileID: 2143564828}
-  mainAuio: {fileID: 24100000, guid: 140c79862db53964e9c014b2e67f0d4b, type: 2}
 --- !u!1 &919112347
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,7 +677,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 772670635}
+    m_TransformParent: {fileID: 208940034}
     m_Modifications:
     - target: {fileID: 62696056977606257, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: SFX_Vol
@@ -674,7 +710,7 @@ PrefabInstance:
     - target: {fileID: 1859779123753392078, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 772670636}
+      objectReference: {fileID: 208940035}
     - target: {fileID: 1859779123753392078, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BackToMainMenu
@@ -682,6 +718,22 @@ PrefabInstance:
     - target: {fileID: 1859779123753392078, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Option_ESC, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203198750570643086, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 208940035}
+    - target: {fileID: 2203198750570643086, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeSFXVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 2964887305130479764, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 208940035}
+    - target: {fileID: 2964887305130479764, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeMusicVolume
       objectReference: {fileID: 0}
     - target: {fileID: 4187996732406269065, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_AnchorMax.x
@@ -706,7 +758,7 @@ PrefabInstance:
     - target: {fileID: 4868658255720158647, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 772670636}
+      objectReference: {fileID: 208940035}
     - target: {fileID: 4868658255720158647, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ESCBack
@@ -722,6 +774,10 @@ PrefabInstance:
     - target: {fileID: 5639297428653505539, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644914569688426039, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -11.959961
       objectReference: {fileID: 0}
     - target: {fileID: 5988445819210444843, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_Name
@@ -769,11 +825,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6343515673843410224, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -1820
+      value: 28952.307
       objectReference: {fileID: 0}
     - target: {fileID: 6343515673843410224, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -980
+      value: 8343.927
       objectReference: {fileID: 0}
     - target: {fileID: 6343515673843410224, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_LocalPosition.x
@@ -793,23 +849,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6343515673843410224, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6343515673843410224, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6343515673843410224, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6343515673843410224, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6343515673843410224, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6343515673843410224, guid: 1c84ece7a6affc44282d0dcbc782e225, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

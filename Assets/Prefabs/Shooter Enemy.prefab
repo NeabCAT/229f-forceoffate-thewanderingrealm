@@ -208,7 +208,7 @@ MonoBehaviour:
   headCheckRadius: 0.2
   playerLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   deadAnimationName: Dead
   isDead: 0
 --- !u!95 &1751751288721875915

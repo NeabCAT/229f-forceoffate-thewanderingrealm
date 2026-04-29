@@ -116,8 +116,6 @@ public class Player : MonoBehaviour
         if (isDead || isInvincible) return;
 
         currentHealth -= amount;
-        Debug.Log($"HP: {currentHealth}/{maxHealth}");
-
         if (currentHealth <= 0)
             Die();
         else
@@ -156,7 +154,7 @@ public class Player : MonoBehaviour
 
             if (stomp != null && isAbove && isFalling) return;
 
-            TakeDamage(1);
+            TakeDamage(currentHealth);
         }
     }
 

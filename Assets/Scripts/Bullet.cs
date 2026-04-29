@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
@@ -37,5 +38,10 @@ public class Bullet : MonoBehaviour
         if (col.gameObject.CompareTag("Enemy")) return;
         if (col.gameObject.CompareTag("Bullet")) return;
         Destroy(gameObject);
+    }
+
+    internal void Init(Vector2 dir)
+    {
+        throw new NotImplementedException();
     }
 }

@@ -111,7 +111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7246399696911509672}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.9429391, w: 0.33296537}
+  m_LocalRotation: {x: 0, y: 0, z: -0.94293827, w: 0.3329676}
   m_LocalPosition: {x: 148.093, y: 2.557, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -191,10 +191,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GrapplePoint
   grappleRange: 2.08
-  pullSpeed: 10
-  stopDistance: 0.5
-  holdToGrapple: 1
+  targetSpeed: 12
+  steerForce: 5
+  slowRadius: 2
+  ropeStiffness: 60
   swingForce: 8
+  stopDistance: 0.5
+  maxGrappleTime: 2
+  minVelocityToKeep: 0.5
+  holdToGrapple: 1
   lineRenderer: {fileID: 4408301479539945862}
 --- !u!120 &4408301479539945862
 LineRenderer:
@@ -255,8 +260,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 1
+        time: 0.050445557
+        value: 0.05405426
         inSlope: 0
         outSlope: 0
         tangentMode: 0

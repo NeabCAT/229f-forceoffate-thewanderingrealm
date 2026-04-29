@@ -1,0 +1,1887 @@
+fileFormatVersion: 2
+guid: b31292136db3cca4cb66fe721fa0966e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -647223048355861676
+    second: Slime_boss3_Attack2_without_shadow_0
+  - first:
+      213: -3280498664388582684
+    second: Slime_boss3_Attack2_without_shadow_1
+  - first:
+      213: -8819256962052738622
+    second: Slime_boss3_Attack2_without_shadow_2
+  - first:
+      213: -42450516693512684
+    second: Slime_boss3_Attack2_without_shadow_3
+  - first:
+      213: 33876739699915289
+    second: Slime_boss3_Attack2_without_shadow_4
+  - first:
+      213: -1112528124857715961
+    second: Slime_boss3_Attack2_without_shadow_5
+  - first:
+      213: -1526379964186349552
+    second: Slime_boss3_Attack2_without_shadow_6
+  - first:
+      213: 5785291542134892571
+    second: Slime_boss3_Attack2_without_shadow_7
+  - first:
+      213: -6275833773013920968
+    second: Slime_boss3_Attack2_without_shadow_8
+  - first:
+      213: 1042824165199705294
+    second: Slime_boss3_Attack2_without_shadow_9
+  - first:
+      213: -243062837946837415
+    second: Slime_boss3_Attack2_without_shadow_10
+  - first:
+      213: -5706480304260915794
+    second: Slime_boss3_Attack2_without_shadow_11
+  - first:
+      213: -4035415415376764957
+    second: Slime_boss3_Attack2_without_shadow_12
+  - first:
+      213: -1463739785399149238
+    second: Slime_boss3_Attack2_without_shadow_13
+  - first:
+      213: -4336088989295673291
+    second: Slime_boss3_Attack2_without_shadow_14
+  - first:
+      213: -2452558514508716623
+    second: Slime_boss3_Attack2_without_shadow_15
+  - first:
+      213: 2730224999870353126
+    second: Slime_boss3_Attack2_without_shadow_16
+  - first:
+      213: 6953320479624808119
+    second: Slime_boss3_Attack2_without_shadow_17
+  - first:
+      213: 4676032524652340559
+    second: Slime_boss3_Attack2_without_shadow_18
+  - first:
+      213: 1523394239628021570
+    second: Slime_boss3_Attack2_without_shadow_19
+  - first:
+      213: 4337291515549350067
+    second: Slime_boss3_Attack2_without_shadow_20
+  - first:
+      213: -2451001712354181769
+    second: Slime_boss3_Attack2_without_shadow_21
+  - first:
+      213: -5589646762732000425
+    second: Slime_boss3_Attack2_without_shadow_22
+  - first:
+      213: 3320074772636740318
+    second: Slime_boss3_Attack2_without_shadow_23
+  - first:
+      213: 9057793019756275832
+    second: Slime_boss3_Attack2_without_shadow_24
+  - first:
+      213: 2389661415096115536
+    second: Slime_boss3_Attack2_without_shadow_25
+  - first:
+      213: 498818764275021472
+    second: Slime_boss3_Attack2_without_shadow_26
+  - first:
+      213: 5501704764146437936
+    second: Slime_boss3_Attack2_without_shadow_27
+  - first:
+      213: -6541835582278453897
+    second: Slime_boss3_Attack2_without_shadow_28
+  - first:
+      213: -21765161042160464
+    second: Slime_boss3_Attack2_without_shadow_29
+  - first:
+      213: 4346306215961301805
+    second: Slime_boss3_Attack2_without_shadow_30
+  - first:
+      213: -6819391734334508913
+    second: Slime_boss3_Attack2_without_shadow_31
+  - first:
+      213: 9133624838259954531
+    second: Slime_boss3_Attack2_without_shadow_32
+  - first:
+      213: 6338510893624908574
+    second: Slime_boss3_Attack2_without_shadow_33
+  - first:
+      213: -4633992510854718777
+    second: Slime_boss3_Attack2_without_shadow_34
+  - first:
+      213: -199847153212946507
+    second: Slime_boss3_Attack2_without_shadow_35
+  - first:
+      213: -6972624537393016579
+    second: Slime_boss3_Attack2_without_shadow_36
+  - first:
+      213: 5775335872100916864
+    second: Slime_boss3_Attack2_without_shadow_37
+  - first:
+      213: -6023274793784338710
+    second: Slime_boss3_Attack2_without_shadow_38
+  - first:
+      213: -3748763409187231958
+    second: Slime_boss3_Attack2_without_shadow_39
+  - first:
+      213: -8076976023761051629
+    second: Slime_boss3_Attack2_without_shadow_40
+  - first:
+      213: -2427325920887579845
+    second: Slime_boss3_Attack2_without_shadow_41
+  - first:
+      213: -8239822459958697737
+    second: Slime_boss3_Attack2_without_shadow_42
+  - first:
+      213: -7060907570042703363
+    second: Slime_boss3_Attack2_without_shadow_43
+  - first:
+      213: -7154494368880629481
+    second: Slime_boss3_Attack2_without_shadow_44
+  - first:
+      213: -7202902192360686863
+    second: Slime_boss3_Attack2_without_shadow_45
+  - first:
+      213: 4807479518158893652
+    second: Slime_boss3_Attack2_without_shadow_46
+  - first:
+      213: -4080080098737867607
+    second: Slime_boss3_Attack2_without_shadow_47
+  - first:
+      213: -253772649627135556
+    second: Slime_boss3_Attack2_without_shadow_48
+  - first:
+      213: -5926739820887022551
+    second: Slime_boss3_Attack2_without_shadow_49
+  - first:
+      213: -8945997591758617594
+    second: Slime_boss3_Attack2_without_shadow_50
+  - first:
+      213: 8577640843925421282
+    second: Slime_boss3_Attack2_without_shadow_51
+  - first:
+      213: 6412300223315815123
+    second: Slime_boss3_Attack2_without_shadow_52
+  - first:
+      213: -7528569961363459803
+    second: Slime_boss3_Attack2_without_shadow_53
+  - first:
+      213: -2199416578389589283
+    second: Slime_boss3_Attack2_without_shadow_54
+  - first:
+      213: -1129302824128958936
+    second: Slime_boss3_Attack2_without_shadow_55
+  - first:
+      213: -8689378639865867393
+    second: Slime_boss3_Attack2_without_shadow_56
+  - first:
+      213: 724166738208959895
+    second: Slime_boss3_Attack2_without_shadow_57
+  - first:
+      213: 6241333703012782956
+    second: Slime_boss3_Attack2_without_shadow_58
+  - first:
+      213: -7479263913209565205
+    second: Slime_boss3_Attack2_without_shadow_59
+  - first:
+      213: -4165453945503077678
+    second: Slime_boss3_Attack2_without_shadow_60
+  - first:
+      213: -5888161231958113209
+    second: Slime_boss3_Attack2_without_shadow_61
+  - first:
+      213: -723466342468372678
+    second: Slime_boss3_Attack2_without_shadow_62
+  - first:
+      213: 6547637005287495738
+    second: Slime_boss3_Attack2_without_shadow_63
+  - first:
+      213: 7123129579359576711
+    second: Slime_boss3_Attack2_without_shadow_64
+  - first:
+      213: -4497507452472781346
+    second: Slime_boss3_Attack2_without_shadow_65
+  - first:
+      213: 2083798208412624491
+    second: Slime_boss3_Attack2_without_shadow_66
+  - first:
+      213: -886210136664165171
+    second: Slime_boss3_Attack2_without_shadow_67
+  - first:
+      213: -5583179774119066735
+    second: Slime_boss3_Attack2_without_shadow_68
+  - first:
+      213: 2326815257851283149
+    second: Slime_boss3_Attack2_without_shadow_69
+  - first:
+      213: 6535516411800908550
+    second: Slime_boss3_Attack2_without_shadow_70
+  - first:
+      213: 2601120539123235199
+    second: Slime_boss3_Attack2_without_shadow_71
+  - first:
+      213: 1505453129712145705
+    second: Slime_boss3_Attack2_without_shadow_72
+  - first:
+      213: 1433350499239755358
+    second: Slime_boss3_Attack2_without_shadow_73
+  - first:
+      213: -1748026184593414214
+    second: Slime_boss3_Attack2_without_shadow_74
+  - first:
+      213: -7427967407655580932
+    second: Slime_boss3_Attack2_without_shadow_75
+  - first:
+      213: 3759860248173363903
+    second: Slime_boss3_Attack2_without_shadow_76
+  - first:
+      213: -3742334910545883925
+    second: Slime_boss3_Attack2_without_shadow_77
+  - first:
+      213: 506376673128417661
+    second: Slime_boss3_Attack2_without_shadow_78
+  - first:
+      213: 7803080055990923703
+    second: Slime_boss3_Attack2_without_shadow_79
+  - first:
+      213: -1472143187358761562
+    second: Slime_boss3_Attack2_without_shadow_80
+  - first:
+      213: 1523673531675689045
+    second: Slime_boss3_Attack2_without_shadow_81
+  - first:
+      213: 6745633389323731976
+    second: Slime_boss3_Attack2_without_shadow_82
+  - first:
+      213: -1545275066146972756
+    second: Slime_boss3_Attack2_without_shadow_83
+  - first:
+      213: 797523300545603270
+    second: Slime_boss3_Attack2_without_shadow_84
+  - first:
+      213: -1575620997553811224
+    second: Slime_boss3_Attack2_without_shadow_85
+  - first:
+      213: 606562146484343509
+    second: Slime_boss3_Attack2_without_shadow_86
+  - first:
+      213: -271921294887799560
+    second: Slime_boss3_Attack2_without_shadow_87
+  - first:
+      213: 7954325363843049280
+    second: Slime_boss3_Attack2_without_shadow_88
+  - first:
+      213: -4067854680652129310
+    second: Slime_boss3_Attack2_without_shadow_89
+  - first:
+      213: -7907227857928417739
+    second: Slime_boss3_Attack2_without_shadow_90
+  - first:
+      213: 6832630315599577384
+    second: Slime_boss3_Attack2_without_shadow_91
+  - first:
+      213: 7725703701618825570
+    second: Slime_boss3_Attack2_without_shadow_92
+  - first:
+      213: 3336936418564655852
+    second: Slime_boss3_Attack2_without_shadow_93
+  - first:
+      213: -2598275423093712040
+    second: Slime_boss3_Attack2_without_shadow_94
+  - first:
+      213: -7532900690630876360
+    second: Slime_boss3_Attack2_without_shadow_95
+  - first:
+      213: 8507122444987346727
+    second: Slime_boss3_Attack2_without_shadow_96
+  - first:
+      213: -8636779826096419593
+    second: Slime_boss3_Attack2_without_shadow_97
+  - first:
+      213: 1417293220533596149
+    second: Slime_boss3_Attack2_without_shadow_98
+  - first:
+      213: 6066133628939413986
+    second: Slime_boss3_Attack2_without_shadow_99
+  - first:
+      213: 6574933800543016345
+    second: Slime_boss3_Attack2_without_shadow_100
+  - first:
+      213: -1225888197019104799
+    second: Slime_boss3_Attack2_without_shadow_101
+  - first:
+      213: -5139915337507928979
+    second: Slime_boss3_Attack2_without_shadow_102
+  - first:
+      213: 5293396287660763750
+    second: Slime_boss3_Attack2_without_shadow_103
+  - first:
+      213: -4203598563054152340
+    second: Slime_boss3_Attack2_without_shadow_104
+  - first:
+      213: -1500272256471897998
+    second: Slime_boss3_Attack2_without_shadow_105
+  - first:
+      213: -6394438690278359318
+    second: Slime_boss3_Attack2_without_shadow_106
+  - first:
+      213: 2764538815403159121
+    second: Slime_boss3_Attack2_without_shadow_107
+  - first:
+      213: -3885643559518102535
+    second: Slime_boss3_Attack2_without_shadow_108
+  - first:
+      213: -4625137552622258473
+    second: Slime_boss3_Attack2_without_shadow_109
+  - first:
+      213: -2604899874499759979
+    second: Slime_boss3_Attack2_without_shadow_110
+  - first:
+      213: 2487022898747020403
+    second: Slime_boss3_Attack2_without_shadow_111
+  - first:
+      213: 8621904015845761087
+    second: Slime_boss3_Attack2_without_shadow_112
+  - first:
+      213: 6424247004847786565
+    second: Slime_boss3_Attack2_without_shadow_113
+  - first:
+      213: 9076360005151097343
+    second: Slime_boss3_Attack2_without_shadow_114
+  - first:
+      213: -3374456541404837547
+    second: Slime_boss3_Attack2_without_shadow_115
+  - first:
+      213: -1318219205405555916
+    second: Slime_boss3_Attack2_without_shadow_116
+  - first:
+      213: 6485443542008755896
+    second: Slime_boss3_Attack2_without_shadow_117
+  - first:
+      213: -2807365988635410770
+    second: Slime_boss3_Attack2_without_shadow_118
+  - first:
+      213: -8356233023743807818
+    second: Slime_boss3_Attack2_without_shadow_119
+  - first:
+      213: 6042674391303929237
+    second: Slime_boss3_Attack2_without_shadow_120
+  - first:
+      213: -5777109374691015460
+    second: Slime_boss3_Attack2_without_shadow_121
+  - first:
+      213: -1266136841337519495
+    second: Slime_boss3_Attack2_without_shadow_122
+  - first:
+      213: 4653687344383796588
+    second: Slime_boss3_Attack2_without_shadow_123
+  - first:
+      213: 2723978373982199706
+    second: Slime_boss3_Attack2_without_shadow_124
+  - first:
+      213: -7104473226339882580
+    second: Slime_boss3_Attack2_without_shadow_125
+  - first:
+      213: -659470255609573368
+    second: Slime_boss3_Attack2_without_shadow_126
+  - first:
+      213: 432920997577942495
+    second: Slime_boss3_Attack2_without_shadow_127
+  - first:
+      213: -3909004986976961842
+    second: Slime_boss3_Attack2_without_shadow_128
+  - first:
+      213: -1034170180938576450
+    second: Slime_boss3_Attack2_without_shadow_129
+  - first:
+      213: 7317609378388428030
+    second: Slime_boss3_Attack2_without_shadow_130
+  - first:
+      213: 5321439164522901571
+    second: Slime_boss3_Attack2_without_shadow_131
+  - first:
+      213: -1703152750664896329
+    second: Slime_boss3_Attack2_without_shadow_132
+  - first:
+      213: -81626136421750532
+    second: Slime_boss3_Attack2_without_shadow_133
+  - first:
+      213: -9209378708553280721
+    second: Slime_boss3_Attack2_without_shadow_134
+  - first:
+      213: 6432590120903124827
+    second: Slime_boss3_Attack2_without_shadow_135
+  - first:
+      213: 6634775348401287120
+    second: Slime_boss3_Attack2_without_shadow_136
+  - first:
+      213: 8065038312731839355
+    second: Slime_boss3_Attack2_without_shadow_137
+  - first:
+      213: 504577806903008196
+    second: Slime_boss3_Attack2_without_shadow_138
+  - first:
+      213: 3114990795470602460
+    second: Slime_boss3_Attack2_without_shadow_139
+  - first:
+      213: 7268071557484807854
+    second: Slime_boss3_Attack2_without_shadow_140
+  - first:
+      213: -2963362153068404321
+    second: Slime_boss3_Attack2_without_shadow_141
+  - first:
+      213: 5285757247102668754
+    second: Slime_boss3_Attack2_without_shadow_142
+  - first:
+      213: 4918202225683969810
+    second: Slime_boss3_Attack2_without_shadow_143
+  - first:
+      213: -698448029043801912
+    second: Slime_boss3_Attack2_without_shadow_144
+  - first:
+      213: 561142407539380328
+    second: Slime_boss3_Attack2_without_shadow_145
+  - first:
+      213: -916569225534163733
+    second: Slime_boss3_Attack2_without_shadow_146
+  - first:
+      213: -4646683336161427711
+    second: Slime_boss3_Attack2_without_shadow_147
+  - first:
+      213: -2152085999139722520
+    second: Slime_boss3_Attack2_without_shadow_148
+  - first:
+      213: 3336220838907609265
+    second: Slime_boss3_Attack2_without_shadow_149
+  - first:
+      213: -4675632047978878179
+    second: Slime_boss3_Attack2_without_shadow_150
+  - first:
+      213: -6907442545392586275
+    second: Slime_boss3_Attack2_without_shadow_151
+  - first:
+      213: -4862244820983223592
+    second: Slime_boss3_Attack2_without_shadow_152
+  - first:
+      213: -2389779635876628713
+    second: Slime_boss3_Attack2_without_shadow_153
+  - first:
+      213: -3235990541835757284
+    second: Slime_boss3_Attack2_without_shadow_154
+  - first:
+      213: -7711487372235834750
+    second: Slime_boss3_Attack2_without_shadow_155
+  - first:
+      213: 6400729996219484986
+    second: Slime_boss3_Attack2_without_shadow_156
+  - first:
+      213: -3624180309469839997
+    second: Slime_boss3_Attack2_without_shadow_157
+  - first:
+      213: 3366502851252897388
+    second: Slime_boss3_Attack2_without_shadow_158
+  - first:
+      213: 8631267545372769148
+    second: Slime_boss3_Attack2_without_shadow_159
+  - first:
+      213: -875448719592198323
+    second: Slime_boss3_Attack2_without_shadow_160
+  - first:
+      213: 2418474743833741357
+    second: Slime_boss3_Attack2_without_shadow_161
+  - first:
+      213: 5185207772911205929
+    second: Slime_boss3_Attack2_without_shadow_162
+  - first:
+      213: 8953635673592463214
+    second: Slime_boss3_Attack2_without_shadow_163
+  - first:
+      213: -8190393583394015793
+    second: Slime_boss3_Attack2_without_shadow_164
+  - first:
+      213: 4941971040022962443
+    second: Slime_boss3_Attack2_without_shadow_165
+  - first:
+      213: -1455606437908938695
+    second: Slime_boss3_Attack2_without_shadow_166
+  - first:
+      213: 4656913684673395140
+    second: Slime_boss3_Attack2_without_shadow_167
+  - first:
+      213: 1430788035797664439
+    second: Slime_boss3_Attack2_without_shadow_168
+  - first:
+      213: 190266028488875370
+    second: Slime_boss3_Attack2_without_shadow_169
+  - first:
+      213: 7872004899610349514
+    second: Slime_boss3_Attack2_without_shadow_170
+  - first:
+      213: -4284637628174411784
+    second: Slime_boss3_Attack2_without_shadow_171
+  - first:
+      213: -78312371286639965
+    second: Slime_boss3_Attack2_without_shadow_172
+  - first:
+      213: -4133043098545461114
+    second: Slime_boss3_Attack2_without_shadow_173
+  - first:
+      213: 4163909673163228120
+    second: Slime_boss3_Attack2_without_shadow_174
+  - first:
+      213: -1151418633597038220
+    second: Slime_boss3_Attack2_without_shadow_175
+  - first:
+      213: 3678622521652807570
+    second: Slime_boss3_Attack2_without_shadow_176
+  - first:
+      213: -3730406657996037080
+    second: Slime_boss3_Attack2_without_shadow_177
+  - first:
+      213: 185405494596727740
+    second: Slime_boss3_Attack2_without_shadow_178
+  - first:
+      213: 5041939453142040851
+    second: Slime_boss3_Attack2_without_shadow_179
+  - first:
+      213: 7425819452524502581
+    second: Slime_boss3_Attack2_without_shadow_180
+  - first:
+      213: -2392723989331566899
+    second: Slime_boss3_Attack2_without_shadow_181
+  - first:
+      213: -3986126215799468136
+    second: Slime_boss3_Attack2_without_shadow_182
+  - first:
+      213: 8014664617096651398
+    second: Slime_boss3_Attack2_without_shadow_183
+  - first:
+      213: -3220415883225738381
+    second: Slime_boss3_Attack2_without_shadow_184
+  - first:
+      213: -5585554963989230272
+    second: Slime_boss3_Attack2_without_shadow_185
+  - first:
+      213: 6562248024529062982
+    second: Slime_boss3_Attack2_without_shadow_186
+  - first:
+      213: 197374913827050010
+    second: Slime_boss3_Attack2_without_shadow_187
+  - first:
+      213: -5250081216319349690
+    second: Slime_boss3_Attack2_without_shadow_188
+  - first:
+      213: -2043619562333454697
+    second: Slime_boss3_Attack2_without_shadow_189
+  - first:
+      213: -8092852068634385513
+    second: Slime_boss3_Attack2_without_shadow_190
+  - first:
+      213: -6882964070235102827
+    second: Slime_boss3_Attack2_without_shadow_191
+  - first:
+      213: 5560323482195670077
+    second: Slime_boss3_Attack2_without_shadow_192
+  - first:
+      213: 2487784853615052668
+    second: Slime_boss3_Attack2_without_shadow_193
+  - first:
+      213: -1383919784969743032
+    second: Slime_boss3_Attack2_without_shadow_194
+  - first:
+      213: -6055127540347613872
+    second: Slime_boss3_Attack2_without_shadow_195
+  - first:
+      213: -7562972496515778273
+    second: Slime_boss3_Attack2_without_shadow_196
+  - first:
+      213: 1670882771901886890
+    second: Slime_boss3_Attack2_without_shadow_197
+  - first:
+      213: 1418596471687344678
+    second: Slime_boss3_Attack2_without_shadow_198
+  - first:
+      213: -4757039593411862255
+    second: Slime_boss3_Attack2_without_shadow_199
+  - first:
+      213: 325875246231486527
+    second: Slime_boss3_Attack2_without_shadow_200
+  - first:
+      213: 6108318686360550709
+    second: Slime_boss3_Attack2_without_shadow_201
+  - first:
+      213: 9079742669575654035
+    second: Slime_boss3_Attack2_without_shadow_202
+  - first:
+      213: 2594801435123019817
+    second: Slime_boss3_Attack2_without_shadow_203
+  - first:
+      213: 7241093417017092425
+    second: Slime_boss3_Attack2_without_shadow_204
+  - first:
+      213: -7822019022970120058
+    second: Slime_boss3_Attack2_without_shadow_205
+  - first:
+      213: -8132694919148892427
+    second: Slime_boss3_Attack2_without_shadow_206
+  - first:
+      213: -7864590361013964233
+    second: Slime_boss3_Attack2_without_shadow_207
+  - first:
+      213: 3605118983975070463
+    second: Slime_boss3_Attack2_without_shadow_208
+  - first:
+      213: 5379983584998108757
+    second: Slime_boss3_Attack2_without_shadow_209
+  - first:
+      213: 206644165007705601
+    second: Slime_boss3_Attack2_without_shadow_210
+  - first:
+      213: 202429125362707273
+    second: Slime_boss3_Attack2_without_shadow_211
+  - first:
+      213: 1190945609661355116
+    second: Slime_boss3_Attack2_without_shadow_212
+  - first:
+      213: 1399569362350130082
+    second: Slime_boss3_Attack2_without_shadow_213
+  - first:
+      213: -6424194334377183710
+    second: Slime_boss3_Attack2_without_shadow_214
+  - first:
+      213: 792263681496297736
+    second: Slime_boss3_Attack2_without_shadow_215
+  - first:
+      213: -8409681471723717013
+    second: Slime_boss3_Attack2_without_shadow_216
+  - first:
+      213: -9090230749904527402
+    second: Slime_boss3_Attack2_without_shadow_217
+  - first:
+      213: 343216323856040498
+    second: Slime_boss3_Attack2_without_shadow_218
+  - first:
+      213: -3521211629521987649
+    second: Slime_boss3_Attack2_without_shadow_219
+  - first:
+      213: -7524144862377574848
+    second: Slime_boss3_Attack2_without_shadow_220
+  - first:
+      213: 1181938530019081607
+    second: Slime_boss3_Attack2_without_shadow_221
+  - first:
+      213: -967265533824685441
+    second: Slime_boss3_Attack2_without_shadow_222
+  - first:
+      213: 9128239921887567444
+    second: Slime_boss3_Attack2_without_shadow_223
+  - first:
+      213: 2437331334008130798
+    second: Slime_boss3_Attack2_without_shadow_224
+  - first:
+      213: -4757165074439621305
+    second: Slime_boss3_Attack2_without_shadow_225
+  - first:
+      213: 3583301494177002260
+    second: Slime_boss3_Attack2_without_shadow_226
+  - first:
+      213: -6642901174309883758
+    second: Slime_boss3_Attack2_without_shadow_227
+  - first:
+      213: -1246391376970544003
+    second: Slime_boss3_Attack2_without_shadow_228
+  - first:
+      213: 7344633035486999371
+    second: Slime_boss3_Attack2_without_shadow_229
+  - first:
+      213: 8443388019482839970
+    second: Slime_boss3_Attack2_without_shadow_230
+  - first:
+      213: -2287376405656898885
+    second: Slime_boss3_Attack2_without_shadow_231
+  - first:
+      213: 36945042789440238
+    second: Slime_boss3_Attack2_without_shadow_232
+  - first:
+      213: 7729273739336213243
+    second: Slime_boss3_Attack2_without_shadow_233
+  - first:
+      213: -1438674161270680052
+    second: Slime_boss3_Attack2_without_shadow_234
+  - first:
+      213: -3342299225095939238
+    second: Slime_boss3_Attack2_without_shadow_235
+  - first:
+      213: 4611701923532592220
+    second: Slime_boss3_Attack2_without_shadow_236
+  - first:
+      213: 5020123121441499428
+    second: Slime_boss3_Attack2_without_shadow_237
+  - first:
+      213: 1965688296647928005
+    second: Slime_boss3_Attack2_without_shadow_238
+  - first:
+      213: 98744603063345374
+    second: Slime_boss3_Attack2_without_shadow_239
+  - first:
+      213: 2362504953671335533
+    second: Slime_boss3_Attack2_without_shadow_240
+  - first:
+      213: 5781401995463981100
+    second: Slime_boss3_Attack2_without_shadow_241
+  - first:
+      213: 721475498033520017
+    second: Slime_boss3_Attack2_without_shadow_242
+  - first:
+      213: 671386192885994391
+    second: Slime_boss3_Attack2_without_shadow_243
+  - first:
+      213: 2990955105473015804
+    second: Slime_boss3_Attack2_without_shadow_244
+  - first:
+      213: -2942419036069165890
+    second: Slime_boss3_Attack2_without_shadow_245
+  - first:
+      213: -1810914162046566047
+    second: Slime_boss3_Attack2_without_shadow_246
+  - first:
+      213: 6730219697117675658
+    second: Slime_boss3_Attack2_without_shadow_247
+  - first:
+      213: -8771823620386081862
+    second: Slime_boss3_Attack2_without_shadow_248
+  - first:
+      213: -2889012249688231790
+    second: Slime_boss3_Attack2_without_shadow_249
+  - first:
+      213: 8174012797055024498
+    second: Slime_boss3_Attack2_without_shadow_250
+  - first:
+      213: -7138651532764102744
+    second: Slime_boss3_Attack2_without_shadow_251
+  - first:
+      213: 7428439693880340090
+    second: Slime_boss3_Attack2_without_shadow_252
+  - first:
+      213: 8753311034691116963
+    second: Slime_boss3_Attack2_without_shadow_253
+  - first:
+      213: 7886492902021387646
+    second: Slime_boss3_Attack2_without_shadow_254
+  - first:
+      213: 2040929160956110562
+    second: Slime_boss3_Attack2_without_shadow_255
+  - first:
+      213: -1355877449912045627
+    second: Slime_boss3_Attack2_without_shadow_256
+  - first:
+      213: -6425131804383100649
+    second: Slime_boss3_Attack2_without_shadow_257
+  - first:
+      213: 2223681878038412248
+    second: Slime_boss3_Attack2_without_shadow_258
+  - first:
+      213: -3650378508947522202
+    second: Slime_boss3_Attack2_without_shadow_259
+  - first:
+      213: 473862974455552211
+    second: Slime_boss3_Attack2_without_shadow_260
+  - first:
+      213: 7437902040489607559
+    second: Slime_boss3_Attack2_without_shadow_261
+  - first:
+      213: -8797283943748076304
+    second: Slime_boss3_Attack2_without_shadow_262
+  - first:
+      213: 1369042574443635436
+    second: Slime_boss3_Attack2_without_shadow_263
+  - first:
+      213: 8227336557129699764
+    second: Slime_boss3_Attack2_without_shadow_264
+  - first:
+      213: 8547607167951091432
+    second: Slime_boss3_Attack2_without_shadow_265
+  - first:
+      213: -1247163656083594383
+    second: Slime_boss3_Attack2_without_shadow_266
+  - first:
+      213: 741845285118301681
+    second: Slime_boss3_Attack2_without_shadow_267
+  - first:
+      213: 1869874405434866725
+    second: Slime_boss3_Attack2_without_shadow_268
+  - first:
+      213: -4859369798673746435
+    second: Slime_boss3_Attack2_without_shadow_269
+  - first:
+      213: 749299095567463110
+    second: Slime_boss3_Attack2_without_shadow_270
+  - first:
+      213: -1291892792451519097
+    second: Slime_boss3_Attack2_without_shadow_271
+  - first:
+      213: 3483537147943873272
+    second: Slime_boss3_Attack2_without_shadow_272
+  - first:
+      213: 6829852172129543244
+    second: Slime_boss3_Attack2_without_shadow_273
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45bad40111a9407f0800000000000000
+      internalID: -647223048355861676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e2a9f678d35972d0800000000000000
+      internalID: -3280498664388582684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1b4f9f484bb9580800000000000000
+      internalID: -8819256962052738622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e83ffda7f296ff0800000000000000
+      internalID: -42450516693512684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a36fb17ba587000800000000000000
+      internalID: 33876739699915289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703793b90918f80f0800000000000000
+      internalID: -1112528124857715961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010366a728531dae0800000000000000
+      internalID: -1526379964186349552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b18a50b710c794050800000000000000
+      internalID: 5785291542134892571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8331b1a2f62c7e8a0800000000000000
+      internalID: -6275833773013920968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4fbe99d0bd87e00800000000000000
+      internalID: 1042824165199705294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956941ef2a770acf0800000000000000
+      internalID: -243062837946837415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eadd3c2c5628ec0b0800000000000000
+      internalID: -5706480304260915794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef155d6f035ff7c0800000000000000
+      internalID: -4035415415376764957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d5daf9b60cfabe0800000000000000
+      internalID: -1463739785399149238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5308c8ea90e13d3c0800000000000000
+      internalID: -4336088989295673291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_15
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b529d77603c6fdd0800000000000000
+      internalID: -2452558514508716623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_16
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eec92a0c25b3e520800000000000000
+      internalID: 2730224999870353126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_17
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b64c7dc2282f7060800000000000000
+      internalID: 6953320479624808119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_18
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4563167eca94e040800000000000000
+      internalID: 4676032524652340559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_19
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f87e95dfe242510800000000000000
+      internalID: 1523394239628021570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b872a747a7213c30800000000000000
+      internalID: 4337291515549350067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_21
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d3147bdea4cfdd0800000000000000
+      internalID: -2451001712354181769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b627f62e59d62b0800000000000000
+      internalID: -5589646762732000425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edaafba4a66431e20800000000000000
+      internalID: 3320074772636740318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_24
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878e59fd2ceb3bd70800000000000000
+      internalID: 9057793019756275832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_25
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051e2446568c92120800000000000000
+      internalID: 2389661415096115536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_26
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a679e3f5092ce600800000000000000
+      internalID: 498818764275021472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_27
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03fc50e655bf95c40800000000000000
+      internalID: 5501704764146437936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_28
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7753843b23bb635a0800000000000000
+      internalID: -6541835582278453897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_29
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b45a9b83bca2bff0800000000000000
+      internalID: -21765161042160464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d231277c97e215c30800000000000000
+      internalID: 4346306215961301805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_31
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80b1ca2957ac51a0800000000000000
+      internalID: -6819391734334508913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3635b2cf56721ce70800000000000000
+      internalID: 9133624838259954531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_33
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1bd47b231ae6f750800000000000000
+      internalID: 6338510893624908574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_34
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca1fa20d50c0bfb0800000000000000
+      internalID: -4633992510854718777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_35
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b78e5fa2100a3df0800000000000000
+      internalID: -199847153212946507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_36
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df054800de24c3f90800000000000000
+      internalID: -6972624537393016579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_37
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e552b606d162050800000000000000
+      internalID: 5775335872100916864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_38
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae69bebdc77096ca0800000000000000
+      internalID: -6023274793784338710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_boss3_Attack2_without_shadow_39
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27a9688a87b9fbc0800000000000000
+      internalID: -3748763409187231958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 18dd0cf4204edc64eb012951e71f6a80
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Slime_boss3_Attack2_without_shadow_0: -647223048355861676
+      Slime_boss3_Attack2_without_shadow_1: -3280498664388582684
+      Slime_boss3_Attack2_without_shadow_10: -243062837946837415
+      Slime_boss3_Attack2_without_shadow_11: -5706480304260915794
+      Slime_boss3_Attack2_without_shadow_12: -4035415415376764957
+      Slime_boss3_Attack2_without_shadow_13: -1463739785399149238
+      Slime_boss3_Attack2_without_shadow_14: -4336088989295673291
+      Slime_boss3_Attack2_without_shadow_15: -2452558514508716623
+      Slime_boss3_Attack2_without_shadow_16: 2730224999870353126
+      Slime_boss3_Attack2_without_shadow_17: 6953320479624808119
+      Slime_boss3_Attack2_without_shadow_18: 4676032524652340559
+      Slime_boss3_Attack2_without_shadow_19: 1523394239628021570
+      Slime_boss3_Attack2_without_shadow_2: -8819256962052738622
+      Slime_boss3_Attack2_without_shadow_20: 4337291515549350067
+      Slime_boss3_Attack2_without_shadow_21: -2451001712354181769
+      Slime_boss3_Attack2_without_shadow_22: -5589646762732000425
+      Slime_boss3_Attack2_without_shadow_23: 3320074772636740318
+      Slime_boss3_Attack2_without_shadow_24: 9057793019756275832
+      Slime_boss3_Attack2_without_shadow_25: 2389661415096115536
+      Slime_boss3_Attack2_without_shadow_26: 498818764275021472
+      Slime_boss3_Attack2_without_shadow_27: 5501704764146437936
+      Slime_boss3_Attack2_without_shadow_28: -6541835582278453897
+      Slime_boss3_Attack2_without_shadow_29: -21765161042160464
+      Slime_boss3_Attack2_without_shadow_3: -42450516693512684
+      Slime_boss3_Attack2_without_shadow_30: 4346306215961301805
+      Slime_boss3_Attack2_without_shadow_31: -6819391734334508913
+      Slime_boss3_Attack2_without_shadow_32: 9133624838259954531
+      Slime_boss3_Attack2_without_shadow_33: 6338510893624908574
+      Slime_boss3_Attack2_without_shadow_34: -4633992510854718777
+      Slime_boss3_Attack2_without_shadow_35: -199847153212946507
+      Slime_boss3_Attack2_without_shadow_36: -6972624537393016579
+      Slime_boss3_Attack2_without_shadow_37: 5775335872100916864
+      Slime_boss3_Attack2_without_shadow_38: -6023274793784338710
+      Slime_boss3_Attack2_without_shadow_39: -3748763409187231958
+      Slime_boss3_Attack2_without_shadow_4: 33876739699915289
+      Slime_boss3_Attack2_without_shadow_5: -1112528124857715961
+      Slime_boss3_Attack2_without_shadow_6: -1526379964186349552
+      Slime_boss3_Attack2_without_shadow_7: 5785291542134892571
+      Slime_boss3_Attack2_without_shadow_8: -6275833773013920968
+      Slime_boss3_Attack2_without_shadow_9: 1042824165199705294
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

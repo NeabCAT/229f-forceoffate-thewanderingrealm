@@ -4,6 +4,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 8f;
+    public int damage = 1; // เพิ่มตรงนี้
     private int direction = 1;
     private float range;
     private Vector3 startPos;
@@ -26,9 +27,15 @@ public class Bullet : MonoBehaviour
     {
         if (col.CompareTag("Enemy")) return;
         if (col.CompareTag("Bullet")) return;
-        //if (col.CompareTag("Shield")) return; // ให้ ShieldCollider จัดการแทน
         if (col.GetComponent<CameraZone>() != null) return;
         if (col.GetComponent<PlatformTriggerZone>() != null) return;
+
+        Player player = col.GetComponent<Player>();
+        if (player != null)
+        {
+            Vector2 knockDir = new Vector2(direction, 0.5f).normalized; // ผลักตามทิศกระสุน
+            player.TakeDamage(damage, knockDir);
+        }
 
         Destroy(gameObject);
     }

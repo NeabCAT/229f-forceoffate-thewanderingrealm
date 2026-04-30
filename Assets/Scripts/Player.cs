@@ -20,6 +20,12 @@ public class Player : MonoBehaviour
     public LayerMask groundLayer;
     public float coyoteTime = 0.15f;
 
+    [Header("Knockback")]
+    public float knockbackForce = 7f;
+    public float knockbackDuration = 0.2f;
+    private bool isKnockedBack = false;
+    private Coroutine knockbackCoroutine;
+
     private float coyoteTimeCounter;
     private Rigidbody2D rb;
     public bool isGrounded;
@@ -94,7 +100,7 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (isDead || isGrappling || isMovementLocked) return;
+        if (isDead || isGrappling || isMovementLocked || isKnockedBack) return;
 
         float platformVelX = currentPlatform != null ? currentPlatform.PlatformVelocity.x : 0f;
 
@@ -111,15 +117,31 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int amount)
+    public void TakeDamage(int amount, Vector2 knockbackDir = default)
     {
-        if (isDead || isInvincible) return;
+        if (isDead) return;
+
+        if (knockbackDir != Vector2.zero)
+        {
+            if (knockbackCoroutine != null)
+                StopCoroutine(knockbackCoroutine);
+            knockbackCoroutine = StartCoroutine(KnockbackCoroutine(knockbackDir));
+        }
 
         currentHealth -= amount;
+
         if (currentHealth <= 0)
             Die();
-        else
-            StartCoroutine(InvincibleCoroutine());
+    }
+
+    System.Collections.IEnumerator KnockbackCoroutine(Vector2 dir)
+    {
+        isKnockedBack = true;
+        rb.linearVelocity = Vector2.zero;
+        rb.AddForce(dir * knockbackForce, ForceMode2D.Impulse);
+        yield return new WaitForSeconds(knockbackDuration);
+        isKnockedBack = false;
+        knockbackCoroutine = null;
     }
 
     void Die()
@@ -144,19 +166,7 @@ public class Player : MonoBehaviour
         isInvincible = false;
     }
 
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.CompareTag("Enemy"))
-        {
-            StompEnemy stomp = col.gameObject.GetComponent<StompEnemy>();
-            bool isAbove = transform.position.y > col.transform.position.y + 0.2f;
-            bool isFalling = rb.linearVelocity.y < 0;
-
-            if (stomp != null && isAbove && isFalling) return;
-
-            TakeDamage(currentHealth);
-        }
-    }
+    void OnCollisionEnter2D(Collision2D col) { }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -167,8 +177,7 @@ public class Player : MonoBehaviour
 
         if (other.CompareTag("DeathZone"))
         {
-            currentHealth = 1;
-            TakeDamage(1);
+            TakeDamage(currentHealth);
         }
     }
 

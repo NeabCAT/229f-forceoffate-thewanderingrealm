@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7162007724328610604}
   - component: {fileID: 1186378363012445406}
   - component: {fileID: 5720684209899055701}
-  - component: {fileID: 2865525929586957763}
   - component: {fileID: 8094170962794827491}
   - component: {fileID: 1751751288721875915}
   m_Layer: 0
@@ -179,18 +178,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0.010010331, y: -0.055296175}
   m_Radius: 0.15076089
---- !u!114 &2865525929586957763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159697998603356469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc07e3ec5723af742a7e700513336f4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyKillPlayer
 --- !u!114 &8094170962794827491
 MonoBehaviour:
   m_ObjectHideFlags: 0

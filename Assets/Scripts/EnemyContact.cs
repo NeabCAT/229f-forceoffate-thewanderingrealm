@@ -11,7 +11,6 @@ public class EnemyContact : MonoBehaviour
 
     [Header("Death Animation")]
     public string deadAnimationName = "Dead";
-
     private Animator animator;
     public bool isDead = false;
 
@@ -40,19 +39,15 @@ public class EnemyContact : MonoBehaviour
     public IEnumerator DeathRoutine()
     {
         isDead = true;
-
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
             rb.bodyType = RigidbodyType2D.Kinematic;
         }
-
         GetComponent<Collider2D>().enabled = false;
-
         if (animator != null)
             animator.SetBool("isDead", true);
-
         yield return new WaitForSeconds(GetAnimationLength(deadAnimationName));
         Destroy(gameObject);
     }
@@ -72,9 +67,15 @@ public class EnemyContact : MonoBehaviour
     {
         if (isDead) return;
         if (!col.gameObject.CompareTag("Player")) return;
+
+        foreach (ContactPoint2D contact in col.contacts)
+            if (contact.normal.y > 0.5f) return;
+
         Player player = col.gameObject.GetComponent<Player>();
-        if (player != null)
-            player.TakeDamage(player.GetCurrentHealth());
+        if (player == null) return;
+        Vector2 knockDir = (col.transform.position - transform.position).normalized;
+        knockDir = new Vector2(knockDir.x, 0.5f).normalized;
+        player.TakeDamage(1, knockDir);
     }
 
     void OnDrawGizmosSelected()

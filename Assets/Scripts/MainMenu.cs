@@ -7,9 +7,8 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        ScreenFader.Instance.FadeToScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-
     public void Quit()
     {
         StartCoroutine(QuitRoutine());

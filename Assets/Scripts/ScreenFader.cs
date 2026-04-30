@@ -1,4 +1,4 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -8,47 +8,51 @@ public class ScreenFader : MonoBehaviour
     public static ScreenFader Instance;
 
     [Header("Fade Settings")]
-    public Image fadePanel;          // ≈“° FadePanel ¡“„ Ëµ√ßπ’È
+    public Image fadePanel;
     public float fadeDuration = 1f;
 
     void Awake()
     {
-        // Singleton „ÀÈ‡√’¬°„™È®“° script Õ◊Ëπ‰¥ÈßË“¬
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        if (Instance != null)
+            Destroy(Instance.gameObject); // ‡∏•‡∏ö‡∏ï‡∏±‡∏ß‡πÄ‡∏Å‡πà‡∏≤‡∏ó‡∏¥‡πâ‡∏á
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
-    // Fade ÕÕ° ·≈È«‚À≈¥ Scene
+    public void FadeToScene(string sceneName)
+    {
+        StartCoroutine(FadeOutAndLoad(sceneName));
+    }
+
     public void FadeToScene(int sceneIndex)
     {
         StartCoroutine(FadeOutAndLoad(sceneIndex));
     }
 
+    IEnumerator FadeOutAndLoad(string sceneName)
+    {
+        yield return StartCoroutine(Fade(0f, 1f));
+        SceneManager.LoadScene(sceneName);
+        yield return StartCoroutine(Fade(1f, 0f));
+    }
+
     IEnumerator FadeOutAndLoad(int sceneIndex)
     {
-        // Fade to black
         yield return StartCoroutine(Fade(0f, 1f));
-
-        // ‚À≈¥ Scene
         SceneManager.LoadScene(sceneIndex);
-
-        // Fade °≈—∫¡“
         yield return StartCoroutine(Fade(1f, 0f));
     }
 
     IEnumerator Fade(float startAlpha, float endAlpha)
     {
-        fadePanel.gameObject.SetActive(true);
+        if (fadePanel == null) yield break;
 
+        fadePanel.gameObject.SetActive(true);
         float elapsed = 0f;
         Color color = fadePanel.color;
+        color.a = startAlpha;
+        fadePanel.color = color;
 
         while (elapsed < fadeDuration)
         {
@@ -61,7 +65,6 @@ public class ScreenFader : MonoBehaviour
         color.a = endAlpha;
         fadePanel.color = color;
 
-        // ´ËÕπ panel ∂È“ fade ®∫·≈È« (alpha = 0)
         if (endAlpha == 0f)
             fadePanel.gameObject.SetActive(false);
     }

@@ -1,13 +1,14 @@
-using System.Collections;
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] public string gameSceneName;
+
     public void PlayGame()
     {
-        ScreenFader.Instance.FadeToScene(SceneManager.GetActiveScene().buildIndex + 1);
+        ScreenFader.Instance.FadeToScene(gameSceneName);
     }
     public void Quit()
     {
@@ -17,7 +18,6 @@ public class MainMenu : MonoBehaviour
     IEnumerator QuitRoutine()
     {
         yield return new WaitForSecondsRealtime(1f);
-        Debug.Log("Quit");
         Application.Quit();
     }
 }

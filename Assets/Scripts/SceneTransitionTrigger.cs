@@ -7,7 +7,7 @@ public class SceneTransitionTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
-        SceneTransitionManager.Instance.GoToScene(targetSceneName);
+        ScreenFader.Instance.FadeToScene(targetSceneName);
     }
 
     private void OnDrawGizmos()

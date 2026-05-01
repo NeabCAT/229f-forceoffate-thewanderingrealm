@@ -8,14 +8,19 @@ public class Boss : MonoBehaviour
     public int hp = 6;
     public int maxHp = 6;
     public Transform[] spawnPoints;
-    public float moveSpeed = 5f; // ความเร็วในการเคลื่อนที่
+    public float moveSpeed = 5f;
 
     private int facingDir = 1;
     private bool isMoving = false;
 
-    void Start()
+    void OnEnable()
     {
         StartCoroutine(Shoot());
+    }
+
+    void OnDisable()
+    {
+        StopAllCoroutines();
     }
 
     IEnumerator Shoot()
@@ -40,7 +45,7 @@ public class Boss : MonoBehaviour
         }
         MoveToRandomPosition();
     }
-    
+
 
     void MoveToRandomPosition()
     {
@@ -74,7 +79,7 @@ public class Boss : MonoBehaviour
             yield return null;
         }
 
-        transform.position = targetPos; // snap ให้ตรงเป๊ะตอนถึง
+        transform.position = targetPos;
         isMoving = false;
     }
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class BossBullet : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class BossBullet : MonoBehaviour
     public void InitBull(Vector2 dir)
     {
         velocity = dir.normalized * speed;
+        Destroy(gameObject, 2f);
     }
 
     void Update()
@@ -35,6 +37,15 @@ public class BossBullet : MonoBehaviour
                 boss.TakeDamage(damage);
             Destroy(gameObject);
             return;
+        }
+
+        if (hit.CompareTag("Player"))
+        {
+            Player player = hit.GetComponent<Player>();
+            if (player != null)
+                player.TakeDamage(damage);
+
+            Destroy(gameObject);
         }
     }
 }

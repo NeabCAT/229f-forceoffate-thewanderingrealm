@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.Audio;
 
 public class Player : MonoBehaviour
 {
@@ -26,6 +28,35 @@ public class Player : MonoBehaviour
     private bool isKnockedBack = false;
     private Coroutine knockbackCoroutine;
 
+    [Header("Sound - Footstep")]
+    public AudioClip[] footstepClips;
+    public float footstepInterval = 0.35f;
+
+    [Header("Sound - Jump / Land")]
+    public AudioClip jumpClip;
+    public AudioClip landClip;
+
+    [Header("Sound - Climb")]
+    public AudioClip[] climbStepClips;
+    public float climbStepInterval = 0.4f;
+
+    [Header("Sound - Hurt / Death")]
+    public AudioClip hurtClip;
+    public AudioClip deathClip;
+
+    [Header("Sound - Audio Sources")]
+    public AudioSource sfxSource;
+    public AudioMixerGroup sfxMixerGroup;
+
+    [Header("Sound - Volume")]
+    [Range(0f, 1f)] public float footstepVolume = 0.5f;
+    [Range(0f, 1f)] public float climbVolume = 0.5f;
+    [Range(0f, 1f)] public float sfxVolume = 1f;
+
+    private float footstepTimer = 0f;
+    private float climbStepTimer = 0f;
+    private bool wasGrounded = false;
+
     private float coyoteTimeCounter;
     private Rigidbody2D rb;
     public bool isGrounded;
@@ -50,6 +81,15 @@ public class Player : MonoBehaviour
         originalScale = transform.localScale;
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
+
+        if (sfxSource == null)
+        {
+            sfxSource = gameObject.AddComponent<AudioSource>();
+            sfxSource.playOnAwake = false;
+        }
+
+        if (sfxMixerGroup != null)
+            sfxSource.outputAudioMixerGroup = sfxMixerGroup;
     }
 
     void Update()
@@ -66,6 +106,12 @@ public class Player : MonoBehaviour
 
         isGrounded = coyoteTimeCounter > 0f;
 
+        if (groundedThisFrame && !wasGrounded
+            && rb.linearVelocity.y < -2f
+            && !isOnMovingPlatform)
+            PlaySound(landClip);
+        wasGrounded = groundedThisFrame;
+
         moveInput = Input.GetAxisRaw("Horizontal");
         animator.SetBool("isWalking", moveInput != 0 && groundedThisFrame);
         animator.SetBool("isJumping", !isGrounded && !isClimbing && rb.linearVelocity.y > 0.1f);
@@ -73,6 +119,10 @@ public class Player : MonoBehaviour
                                       && rb.linearVelocity.y < -0.5f
                                       && !isOnMovingPlatform);
         animator.SetBool("isClimbing", isClimbing);
+
+        HandleFootstepSound(groundedThisFrame);
+
+        HandleClimbSound();
 
         if (canClimb && Input.GetKeyDown(KeyCode.W))
         {
@@ -86,6 +136,7 @@ public class Player : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             coyoteTimeCounter = 0f;
+            PlaySound(jumpClip);
         }
 
         if (moveInput != 0)
@@ -117,6 +168,61 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void PlaySound(AudioClip clip, float volume = -1f)
+    {
+        if (clip == null || sfxSource == null) return;
+        sfxSource.PlayOneShot(clip, volume < 0 ? sfxVolume : volume);
+    }
+
+    private void PlayRandomSound(AudioClip[] clips, float volume)
+    {
+        if (clips == null || clips.Length == 0 || sfxSource == null) return;
+        AudioClip clip = clips[Random.Range(0, clips.Length)];
+        if (clip != null)
+            sfxSource.PlayOneShot(clip, volume);
+    }
+
+    private void HandleFootstepSound(bool groundedThisFrame)
+    {
+        bool isMoving = Mathf.Abs(moveInput) > 0.01f && groundedThisFrame && !isClimbing;
+        if (isMoving)
+        {
+            footstepTimer -= Time.deltaTime;
+            if (footstepTimer <= 0f)
+            {
+                PlayRandomSound(footstepClips, footstepVolume);
+                footstepTimer = footstepInterval;
+            }
+        }
+        else
+        {
+            footstepTimer = 0f;
+        }
+    }
+
+    private void HandleClimbSound()
+    {
+        if (!isClimbing) { climbStepTimer = 0f; return; }
+
+        float climbInput = 0f;
+        if (Input.GetKey(KeyCode.W)) climbInput = 1f;
+        if (Input.GetKey(KeyCode.S)) climbInput = -1f;
+
+        if (Mathf.Abs(climbInput) > 0.01f)
+        {
+            climbStepTimer -= Time.deltaTime;
+            if (climbStepTimer <= 0f)
+            {
+                PlayRandomSound(climbStepClips, climbVolume);
+                climbStepTimer = climbStepInterval;
+            }
+        }
+        else
+        {
+            climbStepTimer = 0f;
+        }
+    }
+
     public void TakeDamage(int amount, Vector2 knockbackDir = default)
     {
         if (isDead) return;
@@ -132,9 +238,11 @@ public class Player : MonoBehaviour
 
         if (currentHealth <= 0)
             Die();
+        else
+            PlaySound(hurtClip);  
     }
 
-    System.Collections.IEnumerator KnockbackCoroutine(Vector2 dir)
+    IEnumerator KnockbackCoroutine(Vector2 dir)
     {
         isKnockedBack = true;
         rb.linearVelocity = Vector2.zero;
@@ -149,17 +257,21 @@ public class Player : MonoBehaviour
         isDead = true;
         rb.linearVelocity = Vector2.zero;
 
+        PlaySound(deathClip);  
         Debug.Log("Player died!");
 
         PlayerRespawn respawn = GetComponent<PlayerRespawn>();
         if (respawn != null)
             respawn.Respawn();
 
+        CameraFollow cam = FindFirstObjectByType<CameraFollow>();
+        if (cam != null) cam.SnapToTarget();
+
         currentHealth = maxHealth;
         isDead = false;
     }
 
-    System.Collections.IEnumerator InvincibleCoroutine()
+    IEnumerator InvincibleCoroutine()
     {
         isInvincible = true;
         yield return new WaitForSeconds(invincibleDuration);
@@ -171,14 +283,10 @@ public class Player : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.TryGetComponent<SpawnPoint>(out SpawnPoint sp))
-        {
             SpawnManager.Instance.TryActivate(sp);
-        }
 
         if (other.CompareTag("DeathZone"))
-        {
             TakeDamage(currentHealth);
-        }
     }
 
     public void SetMovementLocked(bool locked)

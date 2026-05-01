@@ -44,7 +44,6 @@ public class ShooterAI : MonoBehaviour
             return;
         }
 
-        // ✅ เช็คระยะ Player
         GameObject p = GameObject.FindWithTag("Player");
         if (p != null)
             playerInRange = Vector2.Distance(transform.position, p.transform.position) <= detectRange;
@@ -68,7 +67,7 @@ public class ShooterAI : MonoBehaviour
     {
         if (bulletPrefab == null || firePoint == null) return;
         if (enemyContact != null && enemyContact.isDead) return;
-        if (!playerInRange) return;  // ✅ ถ้า Player ออกนอกระยะ ไม่ยิง
+        if (!playerInRange) return;
         if (animator != null)
             animator.SetBool("isShooting", false);
         if (shootClip != null && sfxSource != null)
@@ -82,7 +81,7 @@ public class ShooterAI : MonoBehaviour
         if (firePoint == null) return;
         Gizmos.color = Color.magenta;
         Gizmos.DrawRay(firePoint.position, Vector2.right * (facingDirection >= 0 ? 1f : -1f) * shootRange);
-        Gizmos.color = Color.yellow;  // ✅ แสดง detection range
+        Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, detectRange);
     }
 }

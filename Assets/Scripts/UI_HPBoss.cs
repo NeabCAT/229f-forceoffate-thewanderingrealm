@@ -9,14 +9,22 @@ public class UI_HPBoss : MonoBehaviour
 
     private void Start()
     {
-        boss.enabled = false;
+        if (boss != null)
+        {
+            boss.enabled = false;
+            hpSlider.maxValue = boss.maxHp;
+        }
         hpSlider.gameObject.SetActive(false);
     }
 
     void Update()
     {
-        if (boss == null) return;
-        hpSlider.maxValue = boss.maxHp;
+        if (boss == null)
+        {
+            if (hpSlider != null) hpSlider.value = 0;
+            return;
+        }
+
         hpSlider.value = boss.hp;
     }
 
@@ -25,11 +33,10 @@ public class UI_HPBoss : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerCount++;
-
             if (playerCount == 1)
             {
-                hpSlider.gameObject.SetActive(true);
-                boss.enabled = true;
+                if (hpSlider != null) hpSlider.gameObject.SetActive(true);
+                if (boss != null) boss.enabled = true;
             }
         }
     }
@@ -39,14 +46,16 @@ public class UI_HPBoss : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerCount--;
-
             if (playerCount <= 0)
             {
                 playerCount = 0;
+                if (hpSlider != null) hpSlider.gameObject.SetActive(false);
 
-                hpSlider.gameObject.SetActive(false);
-                boss.enabled = false;
-                boss.hp = boss.maxHp;
+                if (boss != null)
+                {
+                    boss.enabled = false;
+                    boss.hp = boss.maxHp;
+                }
             }
         }
     }

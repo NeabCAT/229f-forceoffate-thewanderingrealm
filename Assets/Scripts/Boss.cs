@@ -40,6 +40,7 @@ public class Boss : MonoBehaviour
         }
         MoveToRandomPosition();
     }
+    
 
     void MoveToRandomPosition()
     {

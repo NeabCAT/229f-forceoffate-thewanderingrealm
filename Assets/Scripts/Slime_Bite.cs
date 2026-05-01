@@ -45,12 +45,12 @@ public class Slime_Bite : MonoBehaviour
 
         if (dist <= detectRange && isGrounded && cooldownTimer <= 0f)
         {
-            JumpToPlayer();
+            Jump();
             cooldownTimer = jumpCooldown;
         }
     }
 
-    void JumpToPlayer()
+    void Jump()
     {
         Vector2 dir = (player.position - transform.position);
 

@@ -4,7 +4,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 8f;
-    public int damage = 1; // เพิ่มตรงนี้
+    public int damage = 1;
     private int direction = 1;
     private float range;
     private Vector3 startPos;
@@ -33,7 +33,7 @@ public class Bullet : MonoBehaviour
         Player player = col.GetComponent<Player>();
         if (player != null)
         {
-            Vector2 knockDir = new Vector2(direction, 0.5f).normalized; // ผลักตามทิศกระสุน
+            Vector2 knockDir = new Vector2(direction, 0.5f).normalized;
             player.TakeDamage(damage, knockDir);
         }
 

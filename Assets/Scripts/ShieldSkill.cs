@@ -12,6 +12,7 @@ public class ShieldSkill : MonoBehaviour
 
     [Header("Sound")]
     public AudioClip shieldOpenClip;
+    public AudioClip reflectShootClip; 
     public AudioSource sfxSource;
 
     private GameObject currentShield;
@@ -34,17 +35,25 @@ public class ShieldSkill : MonoBehaviour
             if (currentShield == null)
             {
                 currentShield = Instantiate(shieldPrefab);
+
                 ShieldCollider sc = currentShield.GetComponent<ShieldCollider>();
-                if (sc != null) sc.Init(this); // ส่ง reference ให้ ShieldCollider
+                if (sc != null)
+                    sc.Init(this); 
 
                 if (shieldOpenClip != null && sfxSource != null)
                     sfxSource.PlayOneShot(shieldOpenClip);
             }
 
             float dir = Mathf.Sign(transform.localScale.x);
-            currentShield.transform.position = transform.position + new Vector3(shieldOffset * dir, 0f, 0f);
+
+            currentShield.transform.position =
+                transform.position + new Vector3(shieldOffset * dir, 0f, 0f);
+
             Vector3 originalScale = currentShield.transform.localScale;
-            currentShield.transform.localScale = new Vector3(Mathf.Abs(originalScale.x) * dir, originalScale.y, originalScale.z);
+            currentShield.transform.localScale =
+                new Vector3(Mathf.Abs(originalScale.x) * dir,
+                            originalScale.y,
+                            originalScale.z);
 
             if (player != null)
                 player.SetMovementLocked(true);
@@ -71,10 +80,19 @@ public class ShieldSkill : MonoBehaviour
         if (reflectBulletPrefab == null) return;
 
         int dir = Mathf.Sign(transform.localScale.x) > 0 ? 1 : -1;
-        GameObject bullet = Instantiate(reflectBulletPrefab, hitPosition, Quaternion.identity);
+
+        GameObject bullet = Instantiate(
+            reflectBulletPrefab,
+            hitPosition,
+            Quaternion.identity
+        );
+
         ReflectBullet rb = bullet.GetComponent<ReflectBullet>();
         if (rb != null)
             rb.Init(dir, reflectBulletRange);
+
+        if (reflectShootClip != null && sfxSource != null)
+            sfxSource.PlayOneShot(reflectShootClip);
     }
 
     void OnDestroy()

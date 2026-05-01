@@ -11,8 +11,8 @@ public class UI_HPBoss : MonoBehaviour
     {
         if (boss != null)
         {
-            boss.enabled = false;
             hpSlider.maxValue = boss.maxHp;
+            boss.enabled = false;
         }
         hpSlider.gameObject.SetActive(false);
     }

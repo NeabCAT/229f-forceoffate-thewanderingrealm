@@ -6,6 +6,7 @@ public class EndCredit : MonoBehaviour
     private Boss boss;
     public GameObject UI_endCredit;
     public RollingText rollingText;
+    public GameObject UI_Hp;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,7 +27,8 @@ public class EndCredit : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
 
-        UI_endCredit.gameObject.SetActive(true);
+        UI_endCredit.SetActive(true);
+        UI_Hp.SetActive(false);
         rollingText.Rolling();
     }
 }

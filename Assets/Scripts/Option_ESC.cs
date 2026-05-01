@@ -12,6 +12,8 @@ public class Option_ESC : MonoBehaviour
     public Slider SFX_Vol;
     public AudioMixer mainAuio;
 
+    public GameObject uiHp;
+
     void Start()
     {
         float music = PlayerPrefs.GetFloat("Music_Vol", 1f);
@@ -68,6 +70,8 @@ public class Option_ESC : MonoBehaviour
         {
             Time.timeScale = 0f;
             uiESC.SetActive(true);
+
+            uiHp.SetActive(false);
         }
         
     }
@@ -76,10 +80,12 @@ public class Option_ESC : MonoBehaviour
     {
         Time.timeScale = 1f;
         uiESC.SetActive(false);
+        uiHp.SetActive(true);
     }
 
     public void BackToMainMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
 

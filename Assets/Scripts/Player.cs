@@ -311,4 +311,9 @@ public class Player : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
+
+    public void SetHealth(int hp)
+    {
+        currentHealth = Mathf.Clamp(hp, 0, maxHealth);
+    }
 }

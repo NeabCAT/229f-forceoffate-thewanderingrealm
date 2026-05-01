@@ -3,6 +3,11 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
+    [Header("Sound")]
+    public AudioClip shootClip;
+    public AudioClip deathClip;
+    public AudioSource sfxSource;
+
     public Transform rightPoint;
     public GameObject bulletPrefab;
     public int hp = 6;
@@ -27,6 +32,9 @@ public class Boss : MonoBehaviour
     {
         while (true)
         {
+            if (shootClip != null && sfxSource != null)
+                sfxSource.PlayOneShot(shootClip);
+
             GameObject bullet = Instantiate(bulletPrefab, rightPoint.position, Quaternion.identity);
             BossBullet b = bullet.GetComponent<BossBullet>();
             if (b != null)
@@ -40,6 +48,9 @@ public class Boss : MonoBehaviour
         hp -= dmg;
         if (hp <= 0)
         {
+            if (deathClip != null && sfxSource != null)
+                sfxSource.PlayOneShot(deathClip);
+
             Destroy(gameObject);
             return;
         }
@@ -50,7 +61,7 @@ public class Boss : MonoBehaviour
     void MoveToRandomPosition()
     {
         if (spawnPoints.Length == 0) return;
-        if (isMoving) return; // ถ้ากำลังเดินอยู่ ไม่ต้องสั่งใหม่
+        if (isMoving) return;
 
         Transform target = spawnPoints[Random.Range(0, spawnPoints.Length)];
 

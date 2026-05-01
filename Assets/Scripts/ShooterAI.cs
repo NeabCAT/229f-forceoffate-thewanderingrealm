@@ -16,6 +16,10 @@ public class ShooterAI : MonoBehaviour
     private EnemyContact enemyContact;
     private Animator animator;
 
+    [Header("Sound")]
+    public AudioClip shootClip;
+    public AudioSource sfxSource;
+
     void Start()
     {
         dir = facingDirection >= 0 ? 1f : -1f;
@@ -54,7 +58,10 @@ public class ShooterAI : MonoBehaviour
         if (enemyContact != null && enemyContact.isDead) return;
 
         if (animator != null)
-            animator.SetBool("isShooting", false); 
+            animator.SetBool("isShooting", false);
+
+        if (shootClip != null && sfxSource != null)
+            sfxSource.PlayOneShot(shootClip);
 
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         bullet.GetComponent<Bullet>().Init(dir > 0 ? 1 : -1, shootRange);

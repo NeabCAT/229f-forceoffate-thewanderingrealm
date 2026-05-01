@@ -10,6 +10,10 @@ public class ShieldSkill : MonoBehaviour
     public GameObject reflectBulletPrefab;
     public float reflectBulletRange = 15f;
 
+    [Header("Sound")]
+    public AudioClip shieldOpenClip;
+    public AudioSource sfxSource;
+
     private GameObject currentShield;
     private Player player;
     private Animator animator;
@@ -32,6 +36,9 @@ public class ShieldSkill : MonoBehaviour
                 currentShield = Instantiate(shieldPrefab);
                 ShieldCollider sc = currentShield.GetComponent<ShieldCollider>();
                 if (sc != null) sc.Init(this); // ส่ง reference ให้ ShieldCollider
+
+                if (shieldOpenClip != null && sfxSource != null)
+                    sfxSource.PlayOneShot(shieldOpenClip);
             }
 
             float dir = Mathf.Sign(transform.localScale.x);

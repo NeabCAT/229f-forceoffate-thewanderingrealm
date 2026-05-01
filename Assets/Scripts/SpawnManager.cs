@@ -8,6 +8,10 @@ public class SpawnManager : MonoBehaviour
     [Header("Spawn Points (เรียงลำดับจากซ้ายไปขวา)")]
     public List<SpawnPoint> spawnPoints = new List<SpawnPoint>();
 
+    [Header("Sound CheckPoin")]
+    public AudioClip checkpointClip;
+    public AudioSource sfxSource;
+
     private int currentSpawnIndex = -1; 
     private Vector3 defaultSpawnPosition;
 
@@ -34,10 +38,13 @@ public class SpawnManager : MonoBehaviour
 
         if (triggeredIndex == -1) return;                 
         if (triggered.isActivated) return;                 
-        if (triggeredIndex <= currentSpawnIndex) return;   
+        if (triggeredIndex <= currentSpawnIndex) return;
 
         currentSpawnIndex = triggeredIndex;
         triggered.Activate();
+
+        if (checkpointClip != null && sfxSource != null)
+            sfxSource.PlayOneShot(checkpointClip);
 
         Debug.Log($"SpawnPoint [{triggeredIndex}] activated!");
     }

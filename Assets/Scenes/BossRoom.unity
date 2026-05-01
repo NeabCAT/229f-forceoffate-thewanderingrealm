@@ -908,6 +908,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3559421422812930377, guid: e53eaac9510dc4c41b7db50c1815e23f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559421422812930377, guid: e53eaac9510dc4c41b7db50c1815e23f, type: 3}
       propertyPath: spawnPoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -58863,6 +58867,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
   spawnPoints:
   - {fileID: 0}
+  checkpointClip: {fileID: 0}
+  sfxSource: {fileID: 0}
 --- !u!4 &353208167
 Transform:
   m_ObjectHideFlags: 0
@@ -59936,7 +59942,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 211916528}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b44eac482e9f1414199753f235d3c605, type: 3}
   m_Name: 

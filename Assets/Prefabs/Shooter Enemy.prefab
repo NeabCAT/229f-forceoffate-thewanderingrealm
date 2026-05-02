@@ -113,7 +113,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7369124763599027577, guid: 1abf214f924f5eb43a7f7ded08947242, type: 3}
   firePoint: {fileID: 8752516514239465452}
   fireRate: 0.65
-  shootRange: 17.3
+  shootRange: 4.3
   detectRange: 18
   facingDirection: -1
   shootClip: {fileID: 8300000, guid: 5a2cc4d69a19a8e43b9f4f227053a1ce, type: 3}

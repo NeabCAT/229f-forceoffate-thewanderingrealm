@@ -41,7 +41,7 @@ public class RollingText : MonoBehaviour
 
     IEnumerator ToMainMenu()
     {
-        yield return new WaitForSecondsRealtime(50f);
+        yield return new WaitForSecondsRealtime(60f);
 
         isRolling = false;
 

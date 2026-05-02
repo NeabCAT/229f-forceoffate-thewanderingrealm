@@ -7,8 +7,8 @@ public class Slime_Bite : MonoBehaviour
 
     [Header("Jump Settings")]
     public float jumpCooldown = 2f;
-    public float jumpForceX = 3f;
-    public float jumpForceY = 8f;
+    public float t = 1f;
+    public float heightOffset = 3f;
 
     private Rigidbody2D rb;
     private EnemyContact enemyContact;
@@ -45,18 +45,23 @@ public class Slime_Bite : MonoBehaviour
 
         if (dist <= detectRange && isGrounded && cooldownTimer <= 0f)
         {
-            Jump();
+            JumpToPlayer();
             cooldownTimer = jumpCooldown;
         }
     }
 
-    void Jump()
+    void JumpToPlayer()
     {
-        Vector2 dir = (player.position - transform.position);
+        Vector2 direction = (player.position - transform.position);
+        direction.y += heightOffset;
+
+        Vector2 velocity = new Vector2(
+            direction.x / t,
+            (direction.y / t) + 0.5f * Mathf.Abs(Physics2D.gravity.y) * t
+        );
 
         rb.linearVelocity = Vector2.zero;
-        rb.AddForce(new Vector2(dir.x * jumpForceX, jumpForceY), ForceMode2D.Impulse);
-
+        rb.linearVelocity = velocity;
         isGrounded = false;
     }
 
@@ -67,15 +72,9 @@ public class Slime_Bite : MonoBehaviour
             if (contact.normal.y > 0.5f)
             {
                 isGrounded = true;
-                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // ✅ หยุดไถล
+                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
                 break;
             }
         }
-    }
-
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, detectRange);
     }
 }

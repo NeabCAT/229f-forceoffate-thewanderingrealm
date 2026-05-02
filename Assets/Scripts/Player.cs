@@ -40,6 +40,11 @@ public class Player : MonoBehaviour
     public AudioClip[] climbStepClips;
     public float climbStepInterval = 0.4f;
 
+    [Header("Sound - Grapple")]
+    public AudioClip grappleShootClip;      
+    public AudioClip grappleAttachClip;     
+    public AudioClip grappleReleaseClip;    
+
     [Header("Sound - Hurt / Death")]
     public AudioClip hurtClip;
     public AudioClip deathClip;
@@ -56,6 +61,7 @@ public class Player : MonoBehaviour
     private float footstepTimer = 0f;
     private float climbStepTimer = 0f;
     private bool wasGrounded = false;
+    private bool wasGrappling = false;   
 
     private float coyoteTimeCounter;
     private Rigidbody2D rb;
@@ -74,6 +80,7 @@ public class Player : MonoBehaviour
 
     private bool isOnMovingPlatform = false;
     private MovingPlatform currentPlatform = null;
+
 
     void Start()
     {
@@ -95,6 +102,9 @@ public class Player : MonoBehaviour
     void Update()
     {
         animator.SetBool("isBlocking", isMovementLocked);
+
+        HandleGrappleSound();
+
         if (isDead || isGrappling || isMovementLocked) return;
 
         bool groundedThisFrame = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
@@ -116,12 +126,11 @@ public class Player : MonoBehaviour
         animator.SetBool("isWalking", moveInput != 0 && groundedThisFrame);
         animator.SetBool("isJumping", !isGrounded && !isClimbing && rb.linearVelocity.y > 0.1f);
         animator.SetBool("isFalling", !groundedThisFrame && !isClimbing
-                                      && rb.linearVelocity.y < -0.5f
-                                      && !isOnMovingPlatform);
+                                       && rb.linearVelocity.y < -0.5f
+                                       && !isOnMovingPlatform);
         animator.SetBool("isClimbing", isClimbing);
 
         HandleFootstepSound(groundedThisFrame);
-
         HandleClimbSound();
 
         if (canClimb && Input.GetKeyDown(KeyCode.W))
@@ -223,6 +232,23 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void HandleGrappleSound()
+    {
+        if (isGrappling && !wasGrappling)        
+            PlaySound(grappleShootClip);
+        else if (!isGrappling && wasGrappling)  
+            PlaySound(grappleReleaseClip);
+
+        wasGrappling = isGrappling;
+    }
+
+
+    public void OnGrappleAttach()
+    {
+        PlaySound(grappleAttachClip);
+    }
+
+
     public void TakeDamage(int amount, Vector2 knockbackDir = default)
     {
         if (isDead) return;
@@ -239,7 +265,10 @@ public class Player : MonoBehaviour
         if (currentHealth <= 0)
             Die();
         else
-            PlaySound(hurtClip);  
+        {
+            PlaySound(hurtClip);
+            StartCoroutine(InvincibleCoroutine());
+        }
     }
 
     IEnumerator KnockbackCoroutine(Vector2 dir)
@@ -257,7 +286,7 @@ public class Player : MonoBehaviour
         isDead = true;
         rb.linearVelocity = Vector2.zero;
 
-        PlaySound(deathClip);  
+        PlaySound(deathClip);
         Debug.Log("Player died!");
 
         PlayerRespawn respawn = GetComponent<PlayerRespawn>();

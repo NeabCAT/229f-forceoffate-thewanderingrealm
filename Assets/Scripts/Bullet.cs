@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
     private float range;
     private Vector3 startPos;
 
-    public void Init(int dir, float range)
+    public void Init(int dir, float range, GameObject owner = null)
     {
         direction = dir;
         this.range = range;

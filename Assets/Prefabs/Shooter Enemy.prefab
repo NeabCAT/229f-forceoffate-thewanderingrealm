@@ -113,7 +113,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7369124763599027577, guid: 1abf214f924f5eb43a7f7ded08947242, type: 3}
   firePoint: {fileID: 8752516514239465452}
   fireRate: 0.65
-  shootRange: 5
+  shootRange: 17.3
+  detectRange: 18
   facingDirection: -1
   shootClip: {fileID: 8300000, guid: 5a2cc4d69a19a8e43b9f4f227053a1ce, type: 3}
   sfxSource: {fileID: 0}
@@ -199,6 +200,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   deadAnimationName: Dead
+  deathSound: {fileID: 8300000, guid: 03e60f492e8e8eb489527ad279d891c0, type: 3}
+  stompSound: {fileID: 0}
+  sfxVolume: 0.5
   isDead: 0
 --- !u!95 &1751751288721875915
 Animator:

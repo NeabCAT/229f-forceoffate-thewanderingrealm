@@ -73,7 +73,7 @@ public class ShooterAI : MonoBehaviour
         if (shootClip != null && sfxSource != null)
             sfxSource.PlayOneShot(shootClip);
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
-        bullet.GetComponent<Bullet>().Init(dir > 0 ? 1 : -1, shootRange);
+        bullet.GetComponent<Bullet>().Init(dir > 0 ? 1 : -1, shootRange, gameObject);
     }
 
     void OnDrawGizmos()

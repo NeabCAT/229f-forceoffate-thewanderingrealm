@@ -128,6 +128,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   deadAnimationName: Dead
+  deathSound: {fileID: 8300000, guid: 03e60f492e8e8eb489527ad279d891c0, type: 3}
+  stompSound: {fileID: 0}
+  sfxVolume: 0.5
   isDead: 0
 --- !u!58 &886660651388622296
 CircleCollider2D:

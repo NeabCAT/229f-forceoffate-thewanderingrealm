@@ -11,7 +11,14 @@ public class EnemyContact : MonoBehaviour
 
     [Header("Death Animation")]
     public string deadAnimationName = "Dead";
+
+    [Header("SFX")]
+    public AudioClip deathSound;
+    public AudioClip stompSound;
+    [Range(0f, 1f)] public float sfxVolume = 1f;
+
     private Animator animator;
+    private AudioSource audioSource;
     public bool isDead = false;
 
     void Awake()
@@ -19,6 +26,10 @@ public class EnemyContact : MonoBehaviour
         animator = GetComponent<Animator>();
         if (animator == null)
             animator = GetComponentInChildren<Animator>();
+
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     void Update()
@@ -31,6 +42,7 @@ public class EnemyContact : MonoBehaviour
             if (playerRb.linearVelocity.y <= 0)
             {
                 playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, stompBounceForce);
+                PlaySFX(stompSound);
                 StartCoroutine(DeathRoutine());
             }
         }
@@ -46,10 +58,17 @@ public class EnemyContact : MonoBehaviour
             rb.bodyType = RigidbodyType2D.Kinematic;
         }
         GetComponent<Collider2D>().enabled = false;
+        PlaySFX(deathSound);
         if (animator != null)
             animator.SetBool("isDead", true);
         yield return new WaitForSeconds(GetAnimationLength(deadAnimationName));
         Destroy(gameObject);
+    }
+
+    void PlaySFX(AudioClip clip)
+    {
+        if (clip == null || audioSource == null) return;
+        audioSource.PlayOneShot(clip, sfxVolume);
     }
 
     float GetAnimationLength(string animName)
@@ -67,10 +86,8 @@ public class EnemyContact : MonoBehaviour
     {
         if (isDead) return;
         if (!col.gameObject.CompareTag("Player")) return;
-
         foreach (ContactPoint2D contact in col.contacts)
             if (contact.normal.y > 0.5f) return;
-
         Player player = col.gameObject.GetComponent<Player>();
         if (player == null) return;
         Vector2 knockDir = (col.transform.position - transform.position).normalized;

@@ -346,6 +346,7 @@ MonoBehaviour:
   Music_Vol: {fileID: 1554798502}
   SFX_Vol: {fileID: 1108060521}
   mainAuio: {fileID: 24100000, guid: 140c79862db53964e9c014b2e67f0d4b, type: 2}
+  uiHp: {fileID: 0}
 --- !u!1 &339337453
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,7 +504,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -7671015650799361280, guid: 140c79862db53964e9c014b2e67f0d4b, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 279509f768e47a546b25de6661e3787e, type: 3}
+  m_Resource: {fileID: 8300000, guid: e7aea397021932140b8818fad1146013, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3631,6 +3632,7 @@ MonoBehaviour:
   Music_Vol: {fileID: 1554798502}
   SFX_Vol: {fileID: 1108060521}
   mainAuio: {fileID: 24100000, guid: 140c79862db53964e9c014b2e67f0d4b, type: 2}
+  uiHp: {fileID: 0}
 --- !u!1 &1767350629
 GameObject:
   m_ObjectHideFlags: 0

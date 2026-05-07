@@ -40,7 +40,10 @@ public class Option_ESC : MonoBehaviour
 
     void Update()
     {
-        ESCOpen();
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ESCOpen();
+        }
     }
 
     public void Option()
@@ -93,11 +96,11 @@ public class Option_ESC : MonoBehaviour
     }
 
 
-    public void BackToMainMenu()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu");
-    }
+    //public void BackToMainMenu()
+    //{
+    //    Time.timeScale = 1f;
+    //    SceneManager.LoadScene("MainMenu");
+    //}
 
     public void ToggleMusic()
     {

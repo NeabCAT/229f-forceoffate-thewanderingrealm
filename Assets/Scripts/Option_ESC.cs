@@ -17,7 +17,8 @@ public class Option_ESC : MonoBehaviour
     public GameObject logo;
     public TextMeshProUGUI nameGame;
 
-    public Toggle muteToggle;
+    public Toggle musicToggle;
+    public Toggle sfxToggle;
 
     float lastMusicVolume;
     float lastSFXVolume;
@@ -98,32 +99,39 @@ public class Option_ESC : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void ToggleAllSound()
+    public void ToggleMusic()
     {
-        if (muteToggle.isOn)
+        if (musicToggle.isOn)
         {
-            // จำค่าก่อน mute
             lastMusicVolume = Music_Vol.value;
+
+            Music_Vol.SetValueWithoutNotify(0);
+
+            mainAuio.SetFloat("Music_Vol", -80f);
+        }
+        else
+        {
+            Music_Vol.SetValueWithoutNotify(lastMusicVolume);
+
+            ChangeMusicVolume();
+        }
+    }
+
+    public void Togglesfx()
+    {
+        if (sfxToggle.isOn)
+        {
             lastSFXVolume = SFX_Vol.value;
 
-            // เลื่อน slider ลง 0
-            Music_Vol.value = 0;
-            SFX_Vol.value = 0;
+            SFX_Vol.SetValueWithoutNotify(0);
 
-            // mute เสียง
-            mainAuio.SetFloat("Music_Vol", -80f);
             mainAuio.SetFloat("SFX_Vol", -80f);
         }
         else
         {
-            // คืนค่า slider เดิม
-            Music_Vol.value = lastMusicVolume;
-            SFX_Vol.value = lastSFXVolume;
+            SFX_Vol.SetValueWithoutNotify(lastSFXVolume);
 
-            // คืนเสียงตาม slider
-            ChangeMusicVolume();
             ChangeSFXVolume();
         }
     }
-
 }

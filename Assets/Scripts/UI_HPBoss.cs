@@ -3,29 +3,40 @@ using UnityEngine.UI;
 
 public class UI_HPBoss : MonoBehaviour
 {
-    public Slider hpSlider;
+    public GameObject[] hearts;
+    public GameObject heartsContainer; // Parent GameObject ของ hearts ทั้งหมด
     public Boss boss;
     private int playerCount = 0;
 
     private void Start()
     {
         if (boss != null)
-        {
-            hpSlider.maxValue = boss.maxHp;
             boss.enabled = false;
-        }
-        hpSlider.gameObject.SetActive(false);
+
+        // ซ่อน container แทนการซ่อนทีละหัวใจ
+        if (heartsContainer != null)
+            heartsContainer.SetActive(false);
     }
 
     void Update()
     {
         if (boss == null)
         {
-            if (hpSlider != null) hpSlider.value = 0;
+            UpdateHearts(0);
+            if (heartsContainer != null)
+                heartsContainer.SetActive(false);
             return;
         }
+        UpdateHearts(boss.hp);
+    }
 
-        hpSlider.value = boss.hp;
+    void UpdateHearts(int currentHP)
+    {
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (hearts[i] == null) continue;
+            hearts[i].SetActive(i < currentHP);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -33,23 +44,32 @@ public class UI_HPBoss : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerCount++;
-            if (playerCount == 1)
+            if (playerCount == 1 && boss != null)
             {
-                if (hpSlider != null) hpSlider.gameObject.SetActive(true);
-                if (boss != null) boss.enabled = true;
+                // เปิด container ก่อน แล้วค่อย update หัวใจ
+                if (heartsContainer != null)
+                    heartsContainer.SetActive(true);
+
+                boss.enabled = true;
+                UpdateHearts(boss.hp);
             }
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
+        if (other == null) return;
+
         if (other.CompareTag("Player"))
         {
             playerCount--;
             if (playerCount <= 0)
             {
                 playerCount = 0;
-                if (hpSlider != null) hpSlider.gameObject.SetActive(false);
+
+                // ซ่อน container
+                if (heartsContainer != null)
+                    heartsContainer.SetActive(false);
 
                 if (boss != null)
                 {
@@ -58,5 +78,10 @@ public class UI_HPBoss : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnDestroy()
+    {
+        boss = null;
     }
 }

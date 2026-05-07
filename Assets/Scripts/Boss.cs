@@ -28,6 +28,7 @@ public class Boss : MonoBehaviour
         StopAllCoroutines();
     }
 
+
     IEnumerator Shoot()
     {
         while (true)

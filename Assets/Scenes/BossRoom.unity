@@ -64956,7 +64956,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d3f99bd319bb64ca9ca18dea56f305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_HPBoss
-  hearts: []
+  hearts:
+  - {fileID: 2055570893}
+  - {fileID: 2055570894}
+  - {fileID: 2055570895}
+  - {fileID: 1174336243}
+  - {fileID: 1617084683}
+  - {fileID: 523507566}
+  heartsContainer: {fileID: 2055570896}
   boss: {fileID: 709309837}
 --- !u!4 &1968680697
 Transform:
@@ -65114,7 +65121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1093244882936240862, guid: 5cc8120daddf89244805dba48b6a5867, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -490
+      value: -1409
       objectReference: {fileID: 0}
     - target: {fileID: 1093244882936240862, guid: 5cc8120daddf89244805dba48b6a5867, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -65134,7 +65141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1966281077464113871, guid: 5cc8120daddf89244805dba48b6a5867, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4611460147087380128, guid: 5cc8120daddf89244805dba48b6a5867, type: 3}
       propertyPath: m_Texture
@@ -65200,10 +65207,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1093244882936240862, guid: 5cc8120daddf89244805dba48b6a5867, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1174336244}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1966281077464113871, guid: 5cc8120daddf89244805dba48b6a5867, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2055570897}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cc8120daddf89244805dba48b6a5867, type: 3}
 --- !u!224 &2055570892 stripped
 RectTransform:
@@ -65230,26 +65234,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1966281077464113871, guid: 5cc8120daddf89244805dba48b6a5867, type: 3}
   m_PrefabInstance: {fileID: 2055570891}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2055570897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055570896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1d3f99bd319bb64ca9ca18dea56f305, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UI_HPBoss
-  hearts:
-  - {fileID: 2055570895}
-  - {fileID: 2055570894}
-  - {fileID: 2055570893}
-  - {fileID: 523507566}
-  - {fileID: 1617084683}
-  - {fileID: 1174336243}
-  boss: {fileID: 709309837}
 --- !u!1 &2117432365
 GameObject:
   m_ObjectHideFlags: 0
